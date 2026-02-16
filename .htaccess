@@ -1,11 +1,4 @@
-DirectoryIndex public/index.php
-
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # If the request is already under /public, do nothing.
-    RewriteRule ^public/ - [L]
-
-    # Send all requests to the Laravel public directory.
-    RewriteRule ^(.*)$ public/$1 [L]
+       RewriteEngine On
+       RewriteRule ^(.*)$ public/$1 [L]
 </IfModule>
